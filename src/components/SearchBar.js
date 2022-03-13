@@ -3,9 +3,11 @@ import React from "react";
 class SearchBar extends React.Component {
   state = {term: ''};
 
-  onFormSubmit(event) {
-    event.preventDefault();
-  }
+  onFormSubmit = event => {
+    event.preventDefault(); // we do not want page refresh automatically anytime we press enter
+
+    console.log(this.state.term);
+  };
 
   render() {
     return (
