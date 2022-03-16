@@ -9,7 +9,7 @@ class App extends React.Component {
   render() {
     return (
       <div className='ui container' style={{ marginTop: '10px'}}>
-        <SearchBar onSubmit={this.onSearchSubmit} /> {/* It does not have to be called onSubmnit*/}
+        <SearchBar onSubmit={this.onSearchSubmit} /> {/* It does not have to be called onSubmit*/}
       </div>
     );
   }
