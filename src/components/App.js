@@ -2,7 +2,7 @@ import React from "react";
 import SearchBar from "./SearchBar";
 
 class App extends React.Component {
-  onSearchSubmit(term) {
+  onSearchSubmit(term) { // It will be used for fetching images, api request
     console.log(term);
   }
 
