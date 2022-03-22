@@ -16,13 +16,14 @@ class App extends React.Component {
       }
     });
 
-    console.log(response.data.results);
+    this.setState({ images: response.data.results });
   }
 
   render() {
     return (
       <div className='ui container' style={{ marginTop: '10px'}}>
         <SearchBar onSubmit={this.onClickSearchSubmit} /> {/* It does not have to be called onSubmit*/}
+        Found: {this.state.images.length} images
       </div>
     );
   }
