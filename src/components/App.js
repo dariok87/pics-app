@@ -19,7 +19,7 @@ class App extends React.Component {
     return (
       <div className='ui container' style={{ marginTop: '10px'}}>
         <SearchBar onSubmit={this.onClickSearchSubmit} /> {/* It does not have to be called onSubmit*/}
-        <ImageList />
+        <ImageList images={this.state.images}/> {/* pass all images from state object */}
       </div>
     );
   }
