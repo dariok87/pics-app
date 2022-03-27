@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export default axios.create({
+export default axios.create({  // precustomized version of axios
   baseURL: 'https://api.unsplash.com',
   headers: {
     Authorization: 
